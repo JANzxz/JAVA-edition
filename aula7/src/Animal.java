@@ -1,21 +1,25 @@
-public abstract class Animal {
+    public abstract  class Animal {
+        protected String nome;
 
-    protected String som;
-    protected String nome;
+        public Animal(String nome) {
+        }
 
-    public String getSom() {
-        return this.som;
+        public String getNome(String nome) {
+            return this.nome;
+        }
+
+        public void setNome(String nome) {
+            this.nome = nome;
+        }
+
+
+
+        public abstract void Correr();
+
+        public abstract void Fazersom();
+
+        public abstract void Comer();
+
+        public abstract void Voar();
+
     }
-
-    public void setSom(String som) {
-        this.som = som;
-    }
-
-    public String getNome() {
-        return this.nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-}
